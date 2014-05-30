@@ -42,3 +42,4 @@ On voit que la branche devsurprise a été ajoutée (image08)
 celine-portable est toujours sur master
 j'enregistre les modifs de ce fichier sur la branche master (git add/commit/push). On voit dans le graph github que les modifs sont passées sur la branche master mais pas sur la branche devsurprise : master a commencé à prendre un chemin indépendant.
 
+(image09 et 10)
