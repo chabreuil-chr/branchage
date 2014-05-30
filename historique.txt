@@ -1,0 +1,9 @@
+J'ai créé un nouveau repository dans github et je l'ai cloné sur mon serveur.
+Je travaillerai avec 2 contributeurs : celine-serveur et celine-portable
+
+celine-serveur commence à travailler en écrivant du code fictif dans ce fichier
+celine-serveur fait :
+	git add . -A
+	git commit -m "travail initial"
+	git push
+
