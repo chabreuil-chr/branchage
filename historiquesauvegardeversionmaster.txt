@@ -1,0 +1,63 @@
+J'ai créé un nouveau repository dans github et je l'ai cloné sur mon serveur.
+Je travaillerai avec 2 contributeurs : celine-serveur et celine-portable
+
+celine-serveur commence à travailler en écrivant du code fictif dans ce fichier
+celine-serveur fait :
+	git add . -A
+	git commit -m "travail initial"
+	git push
+
+celine-serveur édite à nouveau ce fichier :
+remarque : pour éviter d'avoir des problèmes plus tard avec les branches, il vaut mieux taper la commande
+	git config push.default current
+ainsi, vous ne pushez que dans la branche dans laquelle vous travailler.
+
+celine-serveur fait encore add/commit/push pour enregistrer cette édition du fichier, image01.png contiendra le graph des branches git après cette édition
+
+-----------------------------------------------------------------------
+
+celine-portable clone le repository et récupère donc tout ça, toujours sur la branche master.
+De même on exécute git config push.default current, on modifie ce fichier.
+On add/commit/push et on ajoute image02 qui montre le graph après ça. J'ajoute également image03 qui montre le git log à ce stade.
+
+A ce stade, les 2 contributeurs ont avancé le projet fictif sur la branche master, comme nous l'avons fait depuis le début du projet
+
+-----------------------------------------------------------------------
+
+Sur le site github, j'ai créé une branche appelée devsurprise (image04), on voit que cette branche est pour le moment identique à la branche master (image05 et 06).
+celine-portable fait git add/commit/push pour enregistrer ces 3 images
+
+-----------------------------------------------------------------------
+
+celine-portable exécute 
+	git branch
+On ne voit toujours que la branche master (image07)
+
+celine-portable exécute
+	git pull
+On voit que la branche devsurprise a été ajoutée (image08)
+
+-----------------------------------------------------------------------
+
+celine-portable est toujours sur master
+j'enregistre les modifs de ce fichier sur la branche master (git add/commit/push). On voit dans le graph github que les modifs sont passées sur la branche master mais pas sur la branche devsurprise : master a commencé à prendre un chemin indépendant.
+
+(image09 et 10)
+
+------------------------------------------------------------------------
+
+Pour passer sur la branche devsurprise, celine-portable exécutera
+	git checkout devsurprise
+
+A partir de maintenant, le fichier historique va diverger :
+	jusqu'à la ligne 24 les deux branches sont ensemble
+	après la ligne 24 nous aurons deux versions différentes du fichier historique, une pour la branche master, l'autre pour la branche origin
+
+celine-portable, après avoir fait git add/commit/push afin de sauvegarder cette version du fichier, fait son git checkout devsurprise et recharge le fichier. Je trouverai donc le fichier jusqu'à la ligne 24 et pourrai l'éditer en version nouvelle (il en va de même pour les images : celles qui ont été ajouté après l'ajout de la branche devsurprise vont disparaitre -> je me souviens que j'en étais à la numéro 10. 
+Si je veux regarder les images manquantes je devrai refaire git checkout master (après avoir commité sur devsurprise sinon mon travail sur devsurprise sera perdu).
+
+------------------------------------------------------------------------
+
+Je sauvegarde le fichier historique, afin qu'on voit dans quel état il était sur la branche master (le fichier historique va avoir un gros conflit lors du merge des deux branches.
+Pour faire ça, sur celine-portable j'ai fait git checkout master puis j'ai fait une copie du fichier historique tel que je l'ai trouvé.
+(image14)
