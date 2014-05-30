@@ -7,3 +7,10 @@ celine-serveur fait :
 	git commit -m "travail initial"
 	git push
 
+celine-serveur édite à nouveau ce fichier :
+remarque : pour éviter d'avoir des problèmes plus tard avec les branches, il vaut mieux taper la commande
+	git config push.default current
+ainsi, vous ne pushez que dans la branche dans laquelle vous travailler.
+
+celine-serveur fait encore add/commit/push pour enregistrer cette édition du fichier, image01.png contiendra le graph des branches git après cette édition
+
