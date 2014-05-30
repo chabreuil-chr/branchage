@@ -33,4 +33,14 @@ Comme indiqué dans la version master, c'est ici que la branche devsurprise dive
 celine-serveur va maintenant pull, ce qui lui permettra de récupérer 2 choses :
 	les fichiers de la branche master (puisque celine-serveur est restée sur cette branche depuis tout à l'heure)
 	l'existance de la branche devsurprise (ceci lui permettra de switcher sur cette branche si désiré)
+(image12)
+On voit d'ailleurs que la branche master avance de son côté, de par les modifications apportées par celine-serveur (image13)
 
+------------------------------------------------------------------------
+
+celine-serveur va maintenant passer sur devsurprise :
+	git checkout devsurprise
+
+et celine-serveur et celine-portable vont travailler en collaboration sur cette branche.
+
+A la fin de ce travail, les branches seront mergées (avec des conflits inévitables sur ce fichier historique commun)
