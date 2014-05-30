@@ -14,3 +14,10 @@ ainsi, vous ne pushez que dans la branche dans laquelle vous travailler.
 
 celine-serveur fait encore add/commit/push pour enregistrer cette édition du fichier, image01.png contiendra le graph des branches git après cette édition
 
+-----------------------------------------------------------------------
+
+celine-portable clone le repository et récupère donc tout ça, toujours sur la branche master.
+De même on exécute git config push.default current, on modifie ce fichier.
+On add/commit/push et on ajoute image02 qui montre le graph après ça. J'ajoute également image03 qui montre le git log à ce stade.
+
+A ce stade, les 2 contributeurs ont avancé le projet fictif sur la branche master, comme nous l'avons fait depuis le début du projet
