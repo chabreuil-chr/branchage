@@ -27,3 +27,10 @@ A ce stade, les 2 contributeurs ont avancé le projet fictif sur la branche mast
 ------------------------------------------------------------------------
 
 Comme indiqué dans la version master, c'est ici que la branche devsurprise diverge de la branche master, il y a maintenant deux fichiers historique différents l'un de l'autre, et le graphe va également diverger (image11)
+
+------------------------------------------------------------------------
+
+celine-serveur va maintenant pull, ce qui lui permettra de récupérer 2 choses :
+	les fichiers de la branche master (puisque celine-serveur est restée sur cette branche depuis tout à l'heure)
+	l'existance de la branche devsurprise (ceci lui permettra de switcher sur cette branche si désiré)
+
