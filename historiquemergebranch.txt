@@ -1,0 +1,8 @@
+Depuis celine-serveur, je vais merger les branches. Je ferai donc :
+	git checkout master
+	git merge devsurprise
+	git push
+
+Les fichiers image ont bien été nommés dans l'ordre donc il n'y aura pas de problèmes pour eux. Par contre le fichier historique posera des conflits, que nous verrons en temps voulu.
+
+On verra le résultat sur le graphe : les branches master et devsurprise se regrouperons.
