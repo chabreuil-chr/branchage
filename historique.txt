@@ -43,3 +43,15 @@ celine-portable est toujours sur master
 j'enregistre les modifs de ce fichier sur la branche master (git add/commit/push). On voit dans le graph github que les modifs sont passées sur la branche master mais pas sur la branche devsurprise : master a commencé à prendre un chemin indépendant.
 
 (image09 et 10)
+
+------------------------------------------------------------------------
+
+Pour passer sur la branche devsurprise, celine-portable exécutera
+	git checkout devsurprise
+
+A partir de maintenant, le fichier historique va diverger :
+	jusqu'à la ligne 24 les deux branches sont ensemble
+	après la ligne 24 nous aurons deux versions différentes du fichier historique, une pour la branche master, l'autre pour la branche origin
+
+celine-portable, après avoir fait git add/commit/push afin de sauvegarder cette version du fichier, fait son git checkout devsurprise et recharge le fichier. Je trouverai donc le fichier jusqu'à la ligne 24 et pourrai l'éditer en version nouvelle (il en va de même pour les images : celles qui ont été ajouté après l'ajout de la branche devsurprise vont disparaitre -> je me souviens que j'en étais à la numéro 10. 
+Si je veux regarder les images manquantes je devrai refaire git checkout master (après avoir commité sur devsurprise sinon mon travail sur devsurprise sera perdu).
