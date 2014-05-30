@@ -21,3 +21,9 @@ De même on exécute git config push.default current, on modifie ce fichier.
 On add/commit/push et on ajoute image02 qui montre le graph après ça. J'ajoute également image03 qui montre le git log à ce stade.
 
 A ce stade, les 2 contributeurs ont avancé le projet fictif sur la branche master, comme nous l'avons fait depuis le début du projet
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+
+Comme indiqué dans la version master, c'est ici que la branche devsurprise diverge de la branche master, il y a maintenant deux fichiers historique différents l'un de l'autre, et le graphe va également diverger (image11)
