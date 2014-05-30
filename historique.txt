@@ -22,6 +22,7 @@ On add/commit/push et on ajoute image02 qui montre le graph après ça. J'ajoute
 
 A ce stade, les 2 contributeurs ont avancé le projet fictif sur la branche master, comme nous l'avons fait depuis le début du projet
 
+<<<<<<< HEAD
 -----------------------------------------------------------------------
 
 Sur le site github, j'ai créé une branche appelée devsurprise (image04), on voit que cette branche est pour le moment identique à la branche master (image05 et 06).
@@ -55,3 +56,27 @@ A partir de maintenant, le fichier historique va diverger :
 
 celine-portable, après avoir fait git add/commit/push afin de sauvegarder cette version du fichier, fait son git checkout devsurprise et recharge le fichier. Je trouverai donc le fichier jusqu'à la ligne 24 et pourrai l'éditer en version nouvelle (il en va de même pour les images : celles qui ont été ajouté après l'ajout de la branche devsurprise vont disparaitre -> je me souviens que j'en étais à la numéro 10. 
 Si je veux regarder les images manquantes je devrai refaire git checkout master (après avoir commité sur devsurprise sinon mon travail sur devsurprise sera perdu).
+=======
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+
+Comme indiqué dans la version master, c'est ici que la branche devsurprise diverge de la branche master, il y a maintenant deux fichiers historique différents l'un de l'autre, et le graphe va également diverger (image11)
+
+------------------------------------------------------------------------
+
+celine-serveur va maintenant pull, ce qui lui permettra de récupérer 2 choses :
+	les fichiers de la branche master (puisque celine-serveur est restée sur cette branche depuis tout à l'heure)
+	l'existance de la branche devsurprise (ceci lui permettra de switcher sur cette branche si désiré)
+(image12)
+On voit d'ailleurs que la branche master avance de son côté, de par les modifications apportées par celine-serveur (image13)
+
+------------------------------------------------------------------------
+
+celine-serveur va maintenant passer sur devsurprise :
+	git checkout devsurprise
+
+et celine-serveur et celine-portable vont travailler en collaboration sur cette branche.
+
+A la fin de ce travail, les branches seront mergées (avec des conflits inévitables sur ce fichier historique commun)
+>>>>>>> devsurprise
