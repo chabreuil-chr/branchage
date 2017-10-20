@@ -36,7 +36,7 @@ On ne voit toujours que la branche master (image07)
 celine-portable exécute
 	git pull
 On voit que la branche devsurprise a été ajoutée (image08)
-
+je rajoute cette ligne
 -----------------------------------------------------------------------
 
 celine-portable est toujours sur master
